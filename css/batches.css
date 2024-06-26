@@ -1,0 +1,93 @@
+.batches-titleCol.batches-col {
+    display: flex;
+    width: 100%;
+    text-align: left;
+    padding: 16px;
+}
+.batches-titleCol.batches-col:nth-child(odd) {
+    background-color: #F7F8FA;
+}
+.bactches__layout-itemIcon,
+.bactches__layout-id,
+.bactches__layout-status,
+.bactches__layout-processed,
+.bactches__layout-total {
+    flex: 1 1 20%;
+}
+
+.bactches-wrapper {
+    padding: 20px 16px;
+    background: #fff;
+    border-radius: 8px;
+}
+
+.bactches__layout-status--finished {
+    padding: 4px 8px;
+    border-radius: 8px;
+    background: #E9FAEF;
+    font-family: Open Sans;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 12px;
+    text-align: center;
+    color: #16A34A;
+}
+
+.bactches__layout-status--processing {
+    padding: 4px 8px;
+    border-radius: 8px;
+    background: #E6F7FE;
+    font-family: Open Sans;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 12px;
+    text-align: center;
+    color: #027FB7;
+}
+
+.bactches__layout-itemIcon {
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+    text-align: left;
+}
+.bactches__layout-id {
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: left;
+}
+.bactches__layout-processed {
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: right;
+}
+.bactches__layout-total {
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+    text-align: right;
+}
+
+.batches-col--header {
+    font-family: Open Sans;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    text-transform: uppercase;
+    color:#44546F;
+
+}
+.batches-col--header div {
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+}

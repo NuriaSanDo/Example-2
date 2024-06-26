@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AddComm:CODE WORK TEST</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/pie.css" />
+    <link rel="stylesheet" href="css/overviewDetails.css" />
+    <link rel="stylesheet" href="css/batches.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/pieChart.js"></script>
+    <script src="js/batches.js"></script>
+    <script src="js/overviewData.js"></script>
+</head>
+</head>
+
+
+<body>
+
+    <div class="input-group">
+        <select class="custom-select selectFilter" id="inputGroupSelect04">
+            <option value="date1" selected>Date 1</option>
+            <option value="date2">Date 2</option>
+        </select>
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary filter" type="button">Filter</button>
+        </div>
+    </div>
+
+    <div class="chart-container">
+        <!-- OVERVIEW BLOCK -->
+        <div class="overView__layout">
+
+        </div>
+        <!-- PIE CHART-->
+        <div class="wrapper">
+            <div class="pie-charts">
+                <div class="pieID--status pie-chart--wrapper">
+                    <div class="pie-chart">
+                        <div class="pie-chart__title">
+                            <p class="pie-chart-status">Status</p>
+                            <p class="pie-chart-date">in last 7 days</p>
+                            <p class="pie-chart-results"></p>
+                            <p class="pie-chart-total">Total records</p>
+                        </div>
+                        <div class="pie-chart__pie"></div>
+                        <div class="pie-chart-legendContainer">
+                            <ul class="pie-chart__legend">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- BATCHES BLCOCK-->
+         <div class="batches">
+            <div class="bactches-wrapper">
+
+            </div>
+         </div>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
