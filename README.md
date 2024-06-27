@@ -1,6 +1,7 @@
 Code explanation.
 
 You can preview the design in: https://main--prueba-tecnica-addcomm.netlify.app/
+The flowchar.drawio.png explains more graphically the working of my design.
 
 SPANISH:
 
