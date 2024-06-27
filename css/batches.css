@@ -8,11 +8,11 @@
 .batches-titleCol.batches-col:nth-child(odd) {
     background-color: #F7F8FA;
 }
-.bactches__layout-itemIcon,
-.bactches__layout-id,
-.bactches__layout-status,
-.bactches__layout-processed,
-.bactches__layout-total {
+.batches__layout-itemIcon,
+.batches__layout-id,
+.batches__layout-status,
+.batches__layout-processed,
+.batches__layout-total {
     flex: 1 1 20%;
 }
 
@@ -31,7 +31,7 @@
     margin-bottom: 24px;
 }
 
-.bactches__layout-status--finished {
+.batches__layout-status--finished {
     padding: 4px 8px;
     border-radius: 8px;
     background: #E9FAEF;
@@ -43,7 +43,7 @@
     color: #16A34A;
 }
 
-.bactches__layout-status--processing {
+.batches__layout-status--processing {
     padding: 4px 8px;
     border-radius: 8px;
     background: #E6F7FE;
@@ -55,28 +55,28 @@
     color: #027FB7;
 }
 
-.bactches__layout-itemIcon {
+.batches__layout-itemIcon {
     font-family: Open Sans;
     font-size: 14px;
     font-weight: 600;
     line-height: 14px;
     text-align: left;
 }
-.bactches__layout-id {
+.batches__layout-id {
     font-family: Open Sans;
     font-size: 14px;
     font-weight: 400;
     line-height: 14px;
     text-align: left;
 }
-.bactches__layout-processed {
+.batches__layout-processed {
     font-family: Open Sans;
     font-size: 14px;
     font-weight: 400;
     line-height: 14px;
     text-align: right;
 }
-.bactches__layout-total {
+.batches__layout-total {
     font-family: Open Sans;
     font-size: 14px;
     font-weight: 600;
@@ -100,4 +100,51 @@
     font-size: 14px;
     font-weight: 600;
     line-height: 14px;
+}
+span.chart-copy-icon {
+    padding: 6px;
+    position: absolute;
+    top: -7px;
+    display: none;
+}
+.batches__layout-itemIcon:hover,
+.batches__layout-id:hover {
+    cursor: pointer;
+    position: relative;
+}
+.batches__layout-itemIcon:hover span.chart-copy-icon ,
+.batches__layout-id:hover span.chart-copy-icon  {
+    display: inline;
+}
+@media (max-width: 768px) {
+    .batches-titleCol.batches-col {        
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 8px;
+    }
+    .batches__layout-itemIcon {
+        width: 100%;
+        flex: 1 1 100%;
+    }
+    .batches__layout-id,
+    .batches__layout-status,
+    .batches__layout-processed,
+    .batches__layout-total batches__layout-total--0 {
+        width: calc(100% / 4);       
+    }
+    .batches__layout-total {
+        text-align: right;
+    }
+    .batches-titleCol.batches-col:nth-child(odd) {
+        background-color: #fff;
+    }
+    .batches-titleCol.batches-col:nth-child(even) {
+        background-color: #F7F8FA;
+    }
+    .batches-titleCol.batches-col.batches-titleCol.batches-col--header {
+        display: none;
+    }
+    .batches__layout-status {
+        margin-left: 14px;
+    }
 }

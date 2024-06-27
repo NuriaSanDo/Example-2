@@ -52,7 +52,7 @@
     background-image: url(../images/trash.svg);
     background-repeat: no-repeat;
     background-position: 8px center;
-    padding-left: 30px;
+    padding-left: 25px;
 }
 .clear:hover,
 .clear:active

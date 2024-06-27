@@ -57,7 +57,9 @@ $('button.btn.btn-outline-secondary.filter').on('click',function(){
         setOverview(val);
         setBatches(val);
     }
+    ;
 });
+
 /** Add event to clear button */
 $('.clear').on('click',function(){
   clearStats();
@@ -75,3 +77,4 @@ $('.filter').attr('disabled','disabled');
 createPieCharts('date1');
 setOverview('date1');
 setBatches('date1');
+

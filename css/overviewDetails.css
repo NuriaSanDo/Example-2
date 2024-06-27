@@ -68,3 +68,38 @@
     line-height: 16px;
     text-align: left;
 }
+
+.overView__layout-percent.negative {}
+
+.overView__layout-percent.positive {}
+
+.overView__layout-percent.positive {
+    padding: 4px 8px;
+    border-radius: 8px;
+    background-color: #E9FAEF;
+    font-family: Open Sans;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 12px;
+    text-align: center;
+    color: #16A34A;
+    background-image: url(../images/positivearrow.svg);
+    background-repeat: no-repeat;
+    background-position: 9px center;
+    padding-left: 20px;
+}
+.overView__layout-percent.negative {
+    padding: 4px 8px;
+    border-radius: 8px;
+    background-color: #FBEBEB;
+    font-family: Open Sans;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 12px;
+    text-align: center;
+    color: #D32F2F;
+    background-image: url(../images/negativearrow.svg);
+    background-repeat: no-repeat;
+    background-position: 9px center;
+    padding-left: 20px;
+}

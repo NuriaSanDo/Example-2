@@ -26,7 +26,6 @@ var dataSheetChart = {
             {"name":"Running", "qty":"3000"},
             {"name":"Success", "qty":"2024"},
             {"name":"Scheduled", "qty":"500"},
-            {"name":"hold", "qty":"32"},
             {"name":"Error", "qty":"80"}
         ],
         'overviewDataChart': [

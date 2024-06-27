@@ -203,7 +203,12 @@
   border-radius: 8px;
   width: 60%;
 }
-
+.pie-chart__content:hover {
+  background: #F7F8FA;
+  border-radius: 8px;
+  width: 60%;
+  cursor: pointer;
+}
 @media (max-width: 768px) {
   .overView__layout {
     display: flex;
