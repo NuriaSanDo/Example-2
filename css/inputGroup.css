@@ -1,0 +1,68 @@
+.inputGroup-wrapper {
+    margin-bottom: 8px;
+    display: flex;
+    gap: 8px;
+    max-width: 50%;
+}
+
+.custom-select {
+    background: url(../images/calendar.svg) 10px center no-repeat, url(../images/caret.svg) no-repeat right .75rem center;
+    padding-left: 40px;
+    content: url(../images/calendar.svg);
+    background-color: #fff;
+}
+.filter {
+    background: #FFCB03;
+    border-color: #FFCB03;
+    color: #0F354B;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    background-image: url(../images/check.svg);
+    background-repeat: no-repeat;
+    background-position: 8px center;
+    padding-left: 30px;
+}
+.filter:hover,
+.filter:active,
+.btn-outline-secondary:not(:disabled):not(.disabled):active {
+    background-color: #ffcb0382;
+    border-color: #ffcb0382;
+    color: #0F354B;
+}
+.btn-outline-secondary.disabled, .btn-outline-secondary:disabled {
+    color: #6c757d;
+    background-color: transparent;
+    border-color: transparent;
+}
+.filter:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+.clear {
+    background-color: transparent;
+    border-color: transparent;
+    color: #0F354B;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    background-image: url(../images/trash.svg);
+    background-repeat: no-repeat;
+    background-position: 8px center;
+    padding-left: 30px;
+}
+.clear:hover,
+.clear:active
+ {
+    background-color: none;
+    border-color: none;
+    color: none;
+}
+@media  (max-width: 768px) {
+    .inputGroup-wrapper {
+        max-width: 100%;
+    }
+}

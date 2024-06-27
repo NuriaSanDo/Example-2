@@ -1,19 +1,6 @@
-var overviewDataChart = {
-    "date1":[
-        {'name':'Emails', 'icon':'email.svg','qty':'50', 'status':'positive', 'percent':'13%'},
-        {'name':'SMS', 'icon':'sms.svg','qty':'256', 'status':'negative', 'percent':'13%'},
-        {'name':'Prints', 'icon':'printer.svg','qty':'396', 'status':'positive', 'percent':'13%'}
-    ],
-    "date2":[
-        {'name':'Emails', 'icon':'email.svg','qty':'30', 'status':'negative', 'percent':'14%'},
-        {'name':'SMS', 'icon':'sms.svg','qty':'124', 'status':'negative', 'percent':'13%'},
-        {'name':'Prints', 'icon':'printer.svg','qty':'6472', 'status':'positive', 'percent':'13%'}
-    ]
-}
-
 function setOverview(id) {
     $('.overView__layout').html('');
-    var data = overviewDataChart[id];
+    var data = dataSheetChart[id].overviewDataChart;
     console.log(data);
     $(data).each(function(index){
       

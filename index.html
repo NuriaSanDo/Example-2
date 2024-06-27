@@ -9,6 +9,8 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/inputGroup.css" />
     <link rel="stylesheet" href="css/pie.css" />
     <link rel="stylesheet" href="css/overviewDetails.css" />
     <link rel="stylesheet" href="css/batches.css" />
@@ -20,31 +22,40 @@
         rel="stylesheet">
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/datasheet.js"></script>
     <script src="js/pieChart.js"></script>
     <script src="js/batches.js"></script>
     <script src="js/overviewData.js"></script>
-</head>
 </head>
 
 
 <body>
 
-    <div class="input-group">
-        <select class="custom-select selectFilter" id="inputGroupSelect04">
-            <option value="date1" selected>Date 1</option>
-            <option value="date2">Date 2</option>
-        </select>
-        <div class="input-group-append">
-            <button class="btn btn-outline-secondary filter" type="button">Filter</button>
-        </div>
-    </div>
 
     <div class="chart-container">
+        <!-- MAIN TITLE BLOCK-->
+         <div class="chart__mainTitle">
+            <p class="chart__title">Overview</p>
+            <p class="chart__subtitle">An aggregated view of all your data.</p>
+         </div>
+        <!-- INPUT GROUP BLOCK-->
+        <div class="inputGroup-wrapper">
+
+            <select class="custom-select selectFilter" id="inputGroupSelect04">
+
+            </select>
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary filter" type="button">Apply</button>
+            </div>
+            <div class="input-group-append">
+                <button class="btn clear" type="button">Clear</button>
+            </div>
+        </div>
         <!-- OVERVIEW BLOCK -->
         <div class="overView__layout">
 
         </div>
-        <!-- PIE CHART-->
+        <!-- PIE CHART BLOCK-->
         <div class="wrapper">
             <div class="pie-charts">
                 <div class="pieID--status pie-chart--wrapper">
@@ -64,12 +75,12 @@
                 </div>
             </div>
         </div>
-        <!-- BATCHES BLCOCK-->
-         <div class="batches">
-            <div class="bactches-wrapper">
-
+        <!-- BATCHES BLOCK-->
+        <div class="batches">
+            <div class="batches-title">Batches</div>
+            <div class="batches-wrapper">
             </div>
-         </div>
+        </div>
     </div>
 
     <script src="js/scripts.js"></script>

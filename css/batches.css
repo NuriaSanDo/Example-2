@@ -3,6 +3,7 @@
     width: 100%;
     text-align: left;
     padding: 16px;
+    align-items: center;
 }
 .batches-titleCol.batches-col:nth-child(odd) {
     background-color: #F7F8FA;
@@ -15,10 +16,19 @@
     flex: 1 1 20%;
 }
 
-.bactches-wrapper {
-    padding: 20px 16px;
+.batches {
+    padding: 24px 16px;
     background: #fff;
     border-radius: 8px;
+}
+.batches-title {
+    text-align: left;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 24px;
 }
 
 .bactches__layout-status--finished {

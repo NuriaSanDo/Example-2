@@ -1,18 +1,3 @@
-smsChart = {
-    "date1":[
-        {"name":"Running", "qty":"3229"},
-        {"name":"Success", "qty":"456"},
-        {"name":"Scheduled", "qty":"32"},
-        {"name":"Error", "qty":"3"}
-    ],
-    "date2":[
-        {"name":"Running", "qty":"3000"},
-        {"name":"Success", "qty":"2024"},
-        {"name":"Scheduled", "qty":"500"},
-        {"name":"hold", "qty":"32"},
-        {"name":"Error", "qty":"80"}
-    ]
-}
 var totalSms = 0;
 function sliceSize(dataNum, dataTotal) {
     return (dataNum / dataTotal) * 360;
@@ -54,7 +39,7 @@ function sliceSize(dataNum, dataTotal) {
       i             = 0,
       pieElement    = id + " .pie-chart__pie",
       dataHTMLElement   = id + " .pie-chart__legend"
-      dataElement   = smsChart[selectedData];      
+      dataElement   = dataSheetChart[selectedData].sms;      
       color         = [
         "#03A9F4",
         "#22C55E",
@@ -85,21 +70,25 @@ function sliceSize(dataNum, dataTotal) {
         var name = dataElement[i]["name"];
         var qty = dataElement[i]["qty"];
 
-        var items = `            <li class="pie-chart__item">
-              <i class="pie-chart__icon"></i>
+        var items = `
+        <li class="pie-chart__item pie-chart__item--`+dataElement[i]["name"].toLowerCase()+`">
               <span class="pie-chart__itemItle"></span>
-              <span class="pie-chart__itemQty"></span>
-              <span class="pie-chart__percentage"></span>
+              <div class="pie-chart__content">
+                <i class="pie-chart__icon"></i>              
+                <span class="pie-chart__itemQty"></span>
+                <span class="pie-chart__percentage"></span>
+              </div>
             </li> `;
         $('ul.pie-chart__legend').append(items);
         $(dataHTMLElement + " li:nth-child(" + (i + 1) + ") span.pie-chart__itemQty").addClass('pie-chart__itemQty--'+i);
         $(dataHTMLElement + " li:nth-child(" + (i + 1) + ") span.pie-chart__itemQty").html(qty);
         $(dataHTMLElement + " li:nth-child(" + (i + 1) + ") span.pie-chart__itemItle").html(name);
         $(dataHTMLElement + " li:nth-child(" + (i + 1) + ") i").css("background-color", color[i]);        
-        $(dataHTMLElement + " li:nth-child(" + (i + 1) + ") span.pie-chart__percentage").html(percent+'%');
+        $(dataHTMLElement + " li:nth-child(" + (i + 1) + ") span.pie-chart__percentage").html('('+percent+'%)');
         increaseNumberAnimation('.pie-chart__itemQty--'+i, qty, speed = 1);
         offset += size;
       }
+      $('.pie-chart-date').html(dataSheetChart[selectedData].name);
   }
 
   
@@ -108,7 +97,9 @@ function sliceSize(dataNum, dataTotal) {
     //createPie('.pieID--categories' );
     $('.pie-chart__pie').html('');
     $('.pie-chart__legend').html('');
-    createPie('.pieID--status',selectedData);
+    try {
+      createPie('.pieID--status',selectedData);
+    }catch{}    
   }
   
   createPieCharts();
